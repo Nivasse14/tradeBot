@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Node quick syntax check",
+			"type": "shell",
+			"command": "node -e \"import('./compute_portfolio.js').catch(e=>{console.error(e);process.exit(0)})\"",
+			"group": "build"
+		},
+		{
+			"label": "Node quick syntax check",
+			"type": "shell",
+			"command": "node -e \"process.env.DEBUG_HELIUS='1'; import('./compute_portfolio.js').catch(e=>{console.error(e);process.exit(0)})\"",
+			"group": "build"
+		},
+		{
+			"label": "Node quick syntax check",
+			"type": "shell",
+			"command": "node -e \"process.env.DEBUG_HELIUS='1'; import('./compute_portfolio.js').catch(e=>{console.error(e);process.exit(0)})\"",
+			"group": "build"
+		}
+	]
+}
